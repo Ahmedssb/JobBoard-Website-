@@ -1,0 +1,331 @@
+<!Doctype html>
+
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta  content=""  >
+    <title>Job Stock</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/browse.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+
+<body>
+<!-- start home section --> 
+<div id="home">
+  <! -- start nav -->
+    <nav class="navbar navbar-expand-md     fixed-top justify-content-center custom-nav">
+        <div class="container-fluid">
+           <a  class="navbar-brand" href="#">logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse navbar-expand" id="menu">
+
+              <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href=" "  style="color:#888C8A   ">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href=" " style="color: #888C8A">Sign up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href=" " style="color: #888C8A">Sign in</a>
+                    </li>
+
+               </ul>
+
+            </div> 
+
+        </div>
+    
+    </nav>
+  <!--end nav -->
+   <!-- start landing page -->
+      <div class="landing-browse">
+        <div class="home-wrap">     
+           <div class="home-inner">
+            </div> 
+            
+        </div>
+          
+       </div>
+    <!-- end landing page -->
+  <!-- start landing page ccaption -->
+ <div class="caption-browse center-block text-center justify-content-center">
+   <h3>Your job is waiting</h3>   
+    
+
+ </div>
+  
+</div> 
+<! --end home section -->   
+
+<!-- start jobs section -->
+    
+<div id="jobs">
+    <div class="container-fluid justify-content-center" style=" text-align: center;padding:0 3%">
+        <h3 class="page-title">Information Jobs in Saudi</h3>
+     <div class="row justify-content-center">
+         
+              <!-- sart filter section -->
+         <div class="col-md-4  "  style="background-color: #fff" >
+             
+                 <!-- location filter -->
+                   <div class="filter-type"   >
+
+                      <div class="col-auto my-1">
+                          <label class="mr-sm-2" for="inlineFormCustomSelect">country</label>
+                          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                      </div>
+
+                       <div>
+                           <ul>
+                               <a  href="#"><li>Saudi Arabia</li></a>
+                               <a  href="#"><li>Kuwait</li></a>
+                               <a  href="#"><li>UAE</li></a>
+                               <a  href="#"><li>Oman</li></a>
+                               <a  href="#"><li>Jordan</li></a>
+                               <a  href="#"><li>Baharin</li></a>
+                               <span id="loc-dots">...</span><span id="loc-more" class="more">
+                               <a  href="#"><li>Saudi Arabia</li></a>
+                               <a  href="#"><li>Kuwait</li></a>
+                               <a  href="#"><li>UAE</li></a>
+                               <a  href="#"><li>Oman</li></a>
+                               <a  href="#"><li>Jordan</li></a>
+                               <a  href="#"><li>Baharin</li></a>
+                               </span>
+                               <button onclick="showMore('loc-dots','loc-more','loc-btn')"  id="loc-btn" class="more-btn">Show more</button>
+                           </ul>
+                       </div>
+
+                    </div>
+             <!-- end location filter -->
+
+                 <!-- category filter -->
+                   <div class="filter-type" >
+
+                      <div class="col-auto my-1">
+                          <label class="mr-sm-2" for="inlineFormCustomSelect">Category</label>
+                          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Information Techonolgy</option>
+                            <option value="1">Adminstration</option>
+                            <option value="2">Sales</option>
+                            <option value="3">Engneering</option>
+                          </select>
+                      </div>
+
+                       <div>
+                           <ul>
+                               <a  href="#"><li>Accounting and Auditing</li></a>
+                               <a  href="#"><li>Managment</li></a>
+                               <a  href="#"><li>Teaching and Acadmics</li></a>
+                               <a  href="#"><li>Consulting</li></a>
+                               <a  href="#"><li>Safety</li></a>
+                               <a  href="#"><li>Finance</li></a>
+                               <span id="cat-dots">...</span><span id="cat-more"  class="more">
+                               <a  href="#"><li>Managment</li></a>
+                               <a  href="#"><li>Teaching and Acadmics</li></a>
+                               <a  href="#"><li>Consulting</li></a>
+                               <a  href="#"><li>Safety</li></a>
+                               </span>
+                               <button onclick="showMore('cat-dots','cat-more','cat-more-btn')" id="cat-more-btn" class="more-btn">Show more</button>
+
+                           </ul>
+                       </div>
+
+                    </div>
+             <!-- end category filter -->
+
+                  <!-- type filter -->
+                   <div class="filter-type" >
+
+                      <div class="col-auto my-1">
+                          <label class="mr-sm-2" for="inlineFormCustomSelect">Type</label>
+                          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">Full time</option>
+                            <option value="2">Part Time</option>
+                            <option value="2">Conract</option>
+                           </select>
+                      </div>
+
+                  </div>
+             <!-- end type filter -->
+             
+         </div>
+         <!-- end filter section -->
+         
+         <!-- sart job listin -->
+         <div class="col-md-8 ">
+                <div class="job-container"  style="background-color:#fff">
+                        <h4>Web developer</h4> <button><a href="#">Details</a></button>
+                       <h6>Company name <span>12/2019</span></h6>
+                       <p>
+                          We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
+                       </p>
+                       <span class="job-location">Riyadh</span>    <span class="job-type">Full time</span>  
+                    
+               </div>
+             
+               <div class="job-container"  style="background-color:#fff">
+                        <h4>Web developer</h4> <button><a href="#">Details</a></button>
+                       <h6>Company name <span>12/2019</span></h6>
+                       <p>
+                          We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
+                       </p>
+                       <span class="job-location">Riyadh</span>    <span class="job-type">Full time</span>  
+                    
+               </div>
+             
+             
+                <div class="job-container"  style="background-color:#fff">
+                       <h4>Web developer</h4> <button><a href="#">Details</a></button>
+                       <h6>Company name <span>12/2019</span></h6>
+                       <p>
+                          We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
+                       </p>
+                       <span class="job-location">Riyadh</span>    <span class="job-type">Full time</span>  
+                    
+               </div>
+             
+             
+                 <div class="job-container"  style="background-color:#fff">
+                        <h4>Web developer</h4> <button><a href="#">Details</a></button>
+                       <h6>Company name <span>12/2019</span></h6>
+                       <p>
+                          We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
+                       </p>
+                       <span class="job-location">Riyadh</span>    <span class="job-type">Full time</span>  
+                    
+               </div>
+             
+         </div>
+         <!--end job listing -->
+    
+    </div>
+    <div class="pag-div" >
+        <ul class="pagination   justify-content-center">
+          <li class="page-item"><a class="page-link circle-link pre"  href="#" >Previous</a></li>
+          <li class="page-item  circle-item"><a class="page-link circle-link" href="#" >1</a></li>
+          <li class="page-item circle-item"><a class="page-link circle-link" href="#">2</a></li>
+          <li class="page-item circle-item"><a class="page-link circle-link" href="#">3</a></li>
+          <li class="page-item circle-item   "><a  class="page-link circle-link nex" href="#">Next</a></li>
+        </ul>
+    </div> 
+        
+        
+</div>
+ 
+    
+</div>    
+    
+    
+    
+    
+    
+<!-- footer --->
+    
+<div id="contact">
+    
+ <div class=" container-fluid footer">
+    <div class="row  ">
+        
+        <div class="col-md-6">
+          <h4>About Job stock</h4>
+            <p>
+              Job stock is the leading job site, connecting job seekers with employers looking to hire. Every day, thousands of new job vacancies are listed on the award-winning platform from the region's top employers.
+            </p>
+        </div>
+        
+        <div class="col-md-3"></div>
+        
+        <div class="col-md-3  flex-row justify-content-center">
+           <h4 class="text-center" >Contact Us</h4>
+          <input  class="text-center " type="text" value="name">  
+          <input  class="text-center" type="email"  value="email">
+          <textarea  class="text-center" placeholder="message" rows="4"></textarea>
+          <button class="  contact-btn" type="submit">Submit</button>
+
+         </div>
+        
+     </div>
+     
+     <div  class=" row  justify-content-center  no-padding">
+          <p class="">
+           Copyright &copy; 2020  All Rights Reserved JobStock.com
+          <p>
+     </div>
+    
+ </div>
+    
+    
+</div>
+<!--end footer -->
+    
+    
+    
+    
+ <script src="../js/jquery-3.4.1.js"></script>
+ <script src="../js/popper.min.js"></script>
+ <script src="../js/bootstrap.min.js"></script>   
+
+      
+<script>
+// navbar background color change on scroll
+jQuery(document).ready(function(){
+    
+      jQuery(window).scroll(function(){
+        var scroll = jQuery(window).scrollTop();
+          if (scroll > 300) {
+          $("nav").css({"background-color": "#242424"});
+          $(".nav-link").css({"color": "fff"});
+          }
+          else{
+          $("nav").css({"background-color": "#fff"});
+          $(".nav-link").css({"color": "#888C8A"});
+
+          }
+      })
+})
+    
+  </script>
+    
+<script>
+function showMore(par1,par2,par3) {
+   
+      var dots = document.getElementById(par1);
+      var moreText = document.getElementById(par2);
+      var btnText = document.getElementById(par3);
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less"; 
+        moreText.style.display = "inline";
+      }
+}
+</script>
+    
+</body>
+
+
+</html>
