@@ -10,7 +10,7 @@
     <title>Job Stock</title>
     
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/browse.css">
+    <link rel="stylesheet" href="../css/listing.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -71,12 +71,12 @@
 </div> 
 <! --end home section -->   
 
-<!-- start jobs section -->
+<!-- start jobs   section -->
     
-<div id="jobs">
-    <div class="container-fluid justify-content-center" style=" text-align: center;padding:0 3%">
+<div >
+    <div class="container-fluid justify-content-center " id="jobs" style=" text-align: center;">
         <h3 class="page-title">Information Jobs in Saudi</h3>
-     <div class="row justify-content-center">
+     <div class="row justify-content-center" id="jobs_wrap">
          
               <!-- sart filter section -->
          <div class="col-md-4  "  style="background-color: #fff" >
@@ -87,29 +87,27 @@
                       <div class="col-auto my-1">
                           <label class="mr-sm-2" for="inlineFormCustomSelect">country</label>
                           <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option selected>Saudi Arabia</option>
+                            <option value="1">Kuwait</option>
+                            <option value="2">Oman</option>
+                            <option value="3">Jordan</option>
                           </select>
                       </div>
 
                        <div>
                            <ul>
-                               <a  href="#"><li>Saudi Arabia</li></a>
-                               <a  href="#"><li>Kuwait</li></a>
-                               <a  href="#"><li>UAE</li></a>
-                               <a  href="#"><li>Oman</li></a>
-                               <a  href="#"><li>Jordan</li></a>
-                               <a  href="#"><li>Baharin</li></a>
-                               <span id="loc-dots">...</span><span id="loc-more" class="more">
-                               <a  href="#"><li>Saudi Arabia</li></a>
-                               <a  href="#"><li>Kuwait</li></a>
-                               <a  href="#"><li>UAE</li></a>
-                               <a  href="#"><li>Oman</li></a>
-                               <a  href="#"><li>Jordan</li></a>
-                               <a  href="#"><li>Baharin</li></a>
-                               </span>
+                               <a  href="#"><li>Riyadh</li></a>
+                               <a  href="#"><li>Jeddah</li></a>
+                               <a  href="#"><li>Dammam</li></a>
+                               <a  href="#"><li>Makkah</li></a>
+                               <a  href="#"><li>Madinah</li></a>
+                                <span id="loc-dots">...</span><span id="loc-more" class="more">
+                               <a  href="#"><li> Jubail</li></a>
+                               <a  href="#"><li>Jizan</li></a>
+                               <a  href="#"><li>Qaseem</li></a>
+                               <a  href="#"><li>Hail</li></a>
+                               <a  href="#"><li>Qatif</li></a>
+                                </span>
                                <button onclick="showMore('loc-dots','loc-more','loc-btn')"  id="loc-btn" class="more-btn">Show more</button>
                            </ul>
                        </div>
@@ -172,9 +170,9 @@
          <!-- end filter section -->
          
          <!-- sart job listin -->
-         <div class="col-md-8 ">
+         <div class="col-md-8 " id="job_listing">
                 <div class="job-container"  style="background-color:#fff">
-                        <h4>Web developer</h4> <button><a href="#">Details</a></button>
+                        <h4>Web developer</h4> <button onclick="showInfo()" class="job-container-btn" type="button" id="details"><a href="#" >Details</a></button>
                        <h6>Company name <span>12/2019</span></h6>
                        <p>
                           We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
@@ -184,7 +182,7 @@
                </div>
              
                <div class="job-container"  style="background-color:#fff">
-                        <h4>Web developer</h4> <button><a href="#">Details</a></button>
+                        <h4>Web developer</h4> <button onclick="showInfo()" class="job-container-btn"><a href="#">Details</a></button>
                        <h6>Company name <span>12/2019</span></h6>
                        <p>
                           We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
@@ -195,7 +193,7 @@
              
              
                 <div class="job-container"  style="background-color:#fff">
-                       <h4>Web developer</h4> <button><a href="#">Details</a></button>
+                       <h4>Web developer</h4> <button  onclick="showInfo()" class="job-container-btn"><a href="#">Details</a></button>
                        <h6>Company name <span>12/2019</span></h6>
                        <p>
                           We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
@@ -206,7 +204,7 @@
              
              
                  <div class="job-container"  style="background-color:#fff">
-                        <h4>Web developer</h4> <button><a href="#">Details</a></button>
+                        <h4>Web developer</h4> <button onclick="showInfo()"  class="job-container-btn" ><a href="#">Details</a></button>
                        <h6>Company name <span>12/2019</span></h6>
                        <p>
                           We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
@@ -217,8 +215,59 @@
              
          </div>
          <!--end job listing -->
-    
-    </div>
+         
+              <!-- sart job details -->
+    <div class="col-md-4  details-div"  id="job_info" >   
+            <div class=" job-container job-details"  style="background-color:#fff">
+                       <div class="details-div1">
+                            <button  class="div1-btn1" ><span onclick="hideInfo()" id="close_btn"  aria-hidden="true">×</span></button>
+                             <h5>Web developer</h5>
+                           <h6>Company name <span>12/2019</span></h6>
+                           <button class="div1-btn2"  >Apply</button>
+                      </div>   
+                       <div class="details-div2">
+                         <h6>Job Description </h6>
+                           <p>
+                              We are seeking a .NET developer responsible for building/maintaining .NET applications using ASP.Net, VB.net, jQuery and Web Services. Your primary responsibility will be to maintain and develop our application.
+                           </p>
+                           
+                           <h6>Skills</h6>
+                           <ul style="text-align: left">
+                             <li>C# </li>
+                              <li>JS</li>
+                             <li> Documention </li>
+                           </ul>
+                           
+                         <h6>job Details</h6>
+                         <table  class="details-table">
+                           <tr >
+                               <td  >Job Location </td>
+                               <td>Riyadh</td>
+                           </tr>
+                           <tr>
+                               <td>Job Role </td>
+                               <td>Information Technology</td>
+                           </tr>
+                           <tr>
+                               <td>Employment Type </td>
+                               <td>Full Time </td>
+                           </tr>
+                           <tr>
+                               <td>Salary </td>
+                               <td>1000$ </td>
+                           </tr>
+                          <tr>
+                               <td>Num of vacancies </td>
+                               <td>1 </td>
+                           </tr>
+                         </table>   
+                           
+                     </div>
+               </div>     
+        
+</div>
+ 
+        
     <div class="pag-div" >
         <ul class="pagination   justify-content-center">
           <li class="page-item"><a class="page-link circle-link pre"  href="#" >Previous</a></li>
@@ -228,13 +277,8 @@
           <li class="page-item circle-item   "><a  class="page-link circle-link nex" href="#">Next</a></li>
         </ul>
     </div> 
-        
-        
-</div>
- 
-    
 </div>    
-    
+<!-- end jobs section -->
     
     
     
@@ -324,6 +368,8 @@ function showMore(par1,par2,par3) {
       }
 }
 </script>
+        
+<script src="../js/main.js"></script>  
     
 </body>
 
