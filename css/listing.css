@@ -128,6 +128,20 @@ font-size: 35px;
     padding: 15px 0px 30px 0px;
    
 }
+.modal-input-div{
+    text-align: center;
+}
+.modal-input-div input{
+    display: block;
+    margin: 5px 10px 10px 10px;
+    width: 90%;
+    height: 40px;
+    text-align: left;
+}
+.modal-input-div label{
+        color: #2784fc;
+
+}
 .filter-type{
     border: 1px solid #DCDCDC;
     margin: 10px 0;
@@ -170,3 +184,74 @@ border-radius: 100%;
 .pag-div{
     margin-top: 25px;
  }
+.job-post{
+    background-color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    color: #2784fc;
+    
+}
+.job-post h3{
+    margin-bottom: 30px;
+}
+.job-post label{
+    color: #2784fc;
+}
+.job-post input{
+text-align: center;}
+.post-btn{
+    width: 35%;
+    height: 50px;
+    font-size:20px!important;
+}
+.add-skills-btn{
+    background-color:  #2784fc;
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    width: 40px;
+    border-radius: 25px;
+    font-style: bold;
+}
+.login-form{
+    border: 1px solid #DCDCDC;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 0px;
+ }
+.login-form label{
+    color: #2784fc;
+}
+.login-form input{
+    width: 50%;
+    margin: 0px 25%;
+    text-align: center;
+}
+.login-tab{
+    margin: 10px;
+      color: #fff;
+    border-radius: 20px;
+    padding:10px 30px;
+    width: 50%;
+    border: 1px solid  #DCDCDC;
+    color: #2784fc;
+ }
+.forget-pass{
+margin-left: 40px;}
+.error {
+  color: red;
+  margin-left: 5px;
+}
+.nav-title{
+    width: 40%;
+     color:  #2784fc;
+     text-align: center;
+}
+label.error {
+  display: inline;
+}
+/* error message for jquery validation */
+label.error{
+    color: red !important;
+    font-weight: normal !important;
+}

@@ -1,0 +1,218 @@
+<!Doctype html>
+
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta  content=""  >
+    <title>Job Stock</title>
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/listing.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+<!-- start home section --> 
+<div id="home">
+  <! -- start nav -->
+    <nav class="navbar navbar-expand-md     fixed-top justify-content-center custom-nav">
+        <div class="container-fluid">
+           <a  class="navbar-brand" href="#">logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse navbar-expand" id="menu">
+
+              <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="../index.html"  style="color:#888C8A   ">Home</a>
+                    </li>
+                   <li class="nav-item">
+                        <a class="nav-link menu-link" href="job_listing.html"  style="color:#888C8A   ">Job Listing</a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link menu-link" href="post_job.html"  style="color:#888C8A   ">Post A Job</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign_up.html" style="color: #888C8A">Sign up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign_in.html" style="color: #888C8A">Sign in</a>
+                    </li>
+
+               </ul>
+
+            </div> 
+
+        </div>
+    
+    </nav>
+  <!--end nav -->
+   <!-- start landing page -->
+      <div class="landing-browse">
+        <div class="home-wrap">     
+           <div class="home-inner">
+            </div> 
+            
+        </div>
+          
+       </div>
+    <!-- end landing page -->
+  <!-- start landing page ccaption -->
+ <div class="caption-browse center-block text-center justify-content-center">
+   <h3>Your job is waiting</h3>   
+    
+
+ </div>
+  
+</div> 
+<! --end home section -->   
+
+<!-- start post job   section -->
+<div class="container" style="padding: 20px 0px;">
+ 
+   <div class="col-md-10 offset-md-1 job-post"  >
+          
+                <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item nav-title">
+          <a class="nav-link active" data-toggle="tab" href="#cand">Candidates</a>
+        </li>
+        <li class="nav-item nav-title">
+          <a class="nav-link" data-toggle="tab" href="#company">Employer</a>
+        </li>
+
+      </ul>
+
+       <div class="tab-content">
+                   <!-- start candidate login form--> 
+           <div id="cand" class="container tab-pane active">
+                    <form class="login-form" method="post" action="post_job.html" id="login_form">      
+                      <div class="form-group ">
+                            <label  >E-mail</label>
+                            <input type="email" class="form-control  "  id="email" placeholder="fh@gmail.com" name="email">
+                      </div>
+
+                      <div class="form-group">
+                            <label  >Password</label>
+                            <input type="password" class="form-control  " id="password"   placeholder="...." name="password">
+                      </div> 
+                      <input type="submit" class="btn btn-primary " value="Log In"> <a href="#" class="forget-pass">Forget Password</a>
+                   </form>
+           </div>
+        <!-- end candidate login form-->
+        <!-- start candidate login form--> 
+           <div id="company" class="tab-pane container fade">
+                    <form class="login-form" method="post" action="post_job.html" id="company_login">      
+                      <div class="form-group ">
+                            <label  >E-mail</label>
+                            <input type="email" class="form-control  "  id="company_email" placeholder="company@gmail.com" name="company_email">
+                      </div>
+
+                      <div class="form-group">
+                            <label  >Password</label>
+                            <input type="password" class="form-control  " id="company_pass"   placeholder="...." name="company_pass">
+                      </div> 
+                      <input type="submit" class="btn btn-primary " value="Log In"> <a href="#" class="forget-pass">Forget Password</a>
+                   </form>
+           </div>
+        <!-- end candidate login form-->
+           
+           
+       </div>      
+ 
+
+   </div>   
+    
+    
+</div>
+
+<!-- end post job  section -->
+    
+    
+    
+    
+<!-- footer --->
+    
+<div id="contact">
+    
+ <div class=" container-fluid footer">
+    <div class="row  ">
+        
+        <div class="col-md-6">
+          <h4>About Job stock</h4>
+            <p>
+              Job stock is the leading job site, connecting job seekers with employers looking to hire. Every day, thousands of new job vacancies are listed on the award-winning platform from the region's top employers.
+            </p>
+        </div>
+        
+        <div class="col-md-3"></div>
+        
+        <div class="col-md-3  flex-row justify-content-center">
+           <h4 class="text-center" >Contact Us</h4>
+          <input  class="text-center " type="text" value="name">  
+          <input  class="text-center" type="email"  value="email">
+          <textarea  class="text-center" placeholder="message" rows="4"></textarea>
+          <button class="  contact-btn" type="submit">Submit</button>
+
+         </div>
+        
+     </div>
+     
+     <div  class=" row  justify-content-center  no-padding">
+          <p class="">
+           Copyright &copy; 2020  All Rights Reserved JobStock.com
+          <p>
+     </div>
+    
+ </div>
+    
+    
+</div>
+<!--end footer -->
+    
+    
+    
+ <script src="../js/jquery-3.4.1.js"></script>
+ <script src="../js/popper.min.js"></script>
+ <script src="../js/bootstrap.min.js"></script> 
+<script src="../js/main.js"></script>  
+<script src="../js/jquery.validate.min.js"></script>
+ 
+<script>
+// navbar background color change on scroll
+jQuery(document).ready(function(){
+    
+      jQuery(window).scroll(function(){
+        var scroll = jQuery(window).scrollTop();
+          if (scroll > 300) {
+          $("nav").css({"background-color": "#242424"});
+          $(".nav-link").css({"color": "fff"});
+          }
+          else{
+          $("nav").css({"background-color": "#fff"});
+          $(".nav-link").css({"color": "#888C8A"});
+
+          }
+      })
+})
+    
+ 
+
+    
+    
+</script>    
+    
+</body>
+
+
+</html>
