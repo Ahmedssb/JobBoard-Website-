@@ -20,8 +20,6 @@ body{
      z-index: 1;
     height: 26%;
       text-align: center;
-     background-color: #2784fc;
-    color: #fff;
  }
 .caption-browse h3{
     color:#fff;
@@ -64,6 +62,7 @@ body{
 }
 .page-title{
     margin: 30px 0;
+    color: #2784fc;
 }
 
 .job-container:hover{
