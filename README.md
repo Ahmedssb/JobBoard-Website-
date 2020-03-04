@@ -1,7 +1,8 @@
 # JobBoard-Website
-Job Board website built using Html Css Bootstrap 4.
+  Job Board website built using Html Css Bootstrap 4.
   --------------------------------------------
-## Screen Shots  
+## Screen Shots 
+------------------------------
 ### Home Page
   
 ![User Home Page](/images/home.PNG) 
@@ -25,4 +26,4 @@ Job Board website built using Html Css Bootstrap 4.
 ![User Home Page](/images/signIn.PNG) 
 
 
-  # Feel free to use this project or report an Issue.
+  ### Feel free to use this project or report an Issue.
