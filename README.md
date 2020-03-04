@@ -1,5 +1,5 @@
 # JobBoard-Website
-  Job Board website built using Html Css Bootstrap 4.
+  Job Stock website built using Html Css Bootstrap 4.
   
  ####  Try the website : http://jobstock.dx.am/
   --------------------------------------------
